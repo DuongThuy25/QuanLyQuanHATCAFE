@@ -1,0 +1,86 @@
+/* Đặt nền cho toàn trang */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #528c57; /* Màu nền xanh nhạt */
+    
+}
+
+.container-fluid{
+    margin-bottom: 40px;
+    text-align: center;
+}
+/* Khung đăng nhập */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #2e7d32; /* Màu xanh đậm */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input và hiệu ứng */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #66bb6a; /* Màu xanh sáng khi focus */
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #2e7d32;
+}
+
+/* Nút đăng nhập */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #66bb6a;
+}
+
+/* Hiệu ứng nổi bật */
+.input-group input:focus + i {
+    color: #66bb6a; /* Thay đổi màu biểu tượng khi input được focus */
+}
+
+/* Hiệu ứng hover vào khung */
+.login-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f5; /* Xanh lá nhạt */
+    color: #333;
+}
+
+/* Navbar */
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar .nav-link {
+    color: white; /* Màu chữ mặc định */
+    transition: color 0.3s, background-color 0.3s; /* Hiệu ứng chuyển đổi mượt */
+}
+
+.navbar .nav-link:hover {
+    color: #00ffcc; /* Màu chữ khi hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Nền mờ nhẹ khi hover */
+    border-radius: 5px; /* Bo tròn các góc */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Product List */
+.product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #555;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #90ee90; /* Xanh lá nhạt */
+}
+
+img.img-fluid {
+    width: 70%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử cha */
+    height: 300px; /* Giữ tỷ lệ của hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh lấp đầy vùng chứa mà không bị méo */
+    border-radius: 10px;
+  }
+  
+
+

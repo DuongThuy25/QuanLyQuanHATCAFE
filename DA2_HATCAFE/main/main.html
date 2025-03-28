@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hạt Cafe</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mainjs.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light  text-white shadow-sm sticky-top"
+            style="background-color:#135d2d ;">
+            <div class="container">
+                <a class="navbar-brand text-white" href="main.html">
+                    <img src="../picture/278234517_1040996896546351_8052057865786919784_n.jpg" alt="logo"
+                        class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="main.html" class="nav-link text-white">Trang chủ</a></li>
+                        <li class="nav-item"><a href="../product-list/product-list.html" class="nav-link text-white">Sản
+                                phẩm</a></li>
+                        <li class="nav-item"><a href="../about/about.html" class="nav-link text-white">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item"><a href="../news/news.html" class="nav-link text-white">Tin tức</a></li>
+                        <li class="nav-item"><a href="../about/about.html" class="nav-link text-white">Liên hệ</a></li>
+                    </ul>
+                    <div id="user-info" class="d-flex align-items-center ms-lg-5">
+                        <span class="text-white me-3" id="user-name">Xin chào, Người dùng</span>
+                        <button id="logout-btn" class="btn btn-danger btn-sm">Đăng xuất</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <div class="banner position-relative">
+            <img src="../picture/bannerqc1.jpg" alt="Hạt Cafe" class="w-100">
+            <div class="banner-text position-absolute text-center text-white">
+                <h1>Chào Mừng Đến Hạt Cafe</h1>
+                <p>Cà phê nguyên chất - Đậm đà hương vị</p>
+                <a href="#" class="btn btn-light">Khám Phá Ngay</a>
+            </div>
+        </div>
+
+        <section class="box box-featured box-featured-home" style="background-color: #0F4221;">
+            <div class="container" style="background-color: #0F4221;">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="img">
+                                        <img src="../picture/cà phê đen đá.jpg" class="img-fluid"
+                                            alt="WEASEL DRIP COFFEE">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info">
+                                        <h5 class="box-heading white"><a
+                                                href="https://hatacafe.com/weasel-drip-coffee-p160.html"
+                                                title="WEASEL DRIP COFFEE">WEASEL DRIP COFFEE</a></h5>
+                                        <p class="description text-white">
+                                            Net Weight: 130g<br>
+                                            Size: 13 x 10,5 x 9<br>
+                                            Ingredients: 100% Arabica coffee beans.<br>
+                                            Certification: HACCP, ISO<br>
+                                            Max. Moisture (%): ≤ 5%<br>
+                                        </p>
+                                        <a href="https://hatacafe.com/weasel-drip-coffee-p160.html"
+                                            class="btn btn-secondary" title="WEASEL DRIP COFFEE">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="img">
+                                        <img src="https://hatacafe.com/upload/image/data/san-pham/Cafe-Chon-2-54b.png"
+                                            class="img-fluid" alt="PREMIUM WEASEL ARABICA">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info">
+                                        <h5 class="box-heading white"><a
+                                                href="https://hatacafe.com/premium-weasel-arabica-p138.html"
+                                                title="PREMIUM WEASEL ARABICA">PREMIUM WEASEL ARABICA</a></h5>
+                                        <p class="description">
+                                            Đối với những người am hiểu về cà phê thì cà phê Chồn là dòng cà phê hiếm và
+                                            nổi
+                                            tiếng trên thế giới.
+                                        </p>
+                                        <a href="https://hatacafe.com/premium-weasel-arabica-p138.html"
+                                            class="btn btn-secondary" title="PREMIUM WEASEL ARABICA">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product List -->
+        <section class="products py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Sản Phẩm Nổi Bật</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card shadow-sm p-3 mb-5">
+                            <img src="https://hatacafe.com/wp-content/uploads/2021/12/product1.jpg" alt="Product 1"
+                                class="product-image">
+                            <h5 class="mt-3">Cà phê Arabica</h5>
+                            <p>Giá: 120.000 VNĐ</p>
+                            <a href="#" class="btn btn-success btn-sm">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card shadow-sm p-3 mb-5">
+                            <img src="https://hatacafe.com/wp-content/uploads/2021/12/product2.jpg" alt="Product 2"
+                                class="product-image">
+                            <h5 class="mt-3">Cà phê Robusta</h5>
+                            <p>Giá: 100.000 VNĐ</p>
+                            <a href="#" class="btn btn-success btn-sm">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card shadow-sm p-3 mb-5">
+                            <img src="https://hatacafe.com/wp-content/uploads/2021/12/product3.jpg" alt="Product 3"
+                                class="product-image">
+                            <h5 class="mt-3">Cà phê Blend</h5>
+                            <p>Giá: 150.000 VNĐ</p>
+                            <a href="#" class="btn btn-success btn-sm">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Hạt Cafe. Tất cả các quyền được bảo lưu.</p>
+            <div>
+                <a href="https://www.facebook.com/Hatcafeandtea" class="text-white me-3"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/hatcafe882020/" class="text-white me-3"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@hatcafe8820" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px;
+}
+
+/* Select Buttons */
+.select {
+    border-bottom: 1px solid grey;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.select_2 {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product-image {
+    width: 100px;            /* Đảm bảo ảnh chiếm toàn bộ chiều ngang */
+    height: 100px;          /* Đặt chiều cao cố định cho ảnh */
+    object-fit: cover;      /* Cắt ảnh để vừa với khung mà không làm biến dạng */
+    border-radius: 8px;     /* (Tùy chọn) Bo tròn góc ảnh */
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid grey;
+    font-size: 14px;
+}
+

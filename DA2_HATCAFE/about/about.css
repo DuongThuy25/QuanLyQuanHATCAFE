@@ -1,0 +1,9 @@
+.breadcrumb-item a {
+    color: black; /* Màu chữ mặc định */
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: green; /* Màu xanh lá khi di chuột vào */
+    text-decoration: underline; /* Thêm gạch chân để nhấn mạnh */
+}
